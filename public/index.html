@@ -231,7 +231,12 @@ limitations under the License.
           <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
           &nbsp;&nbsp;&nbsp;
           <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
-
+          <form method="POST">
+          <input type="radio" name="identity" value="customer" checked>
+          <label for="customer">I'm a customer</label>
+          <input type="radio" name="identity" value="business">
+          <label for="business">I'm a business</label>
+          </form>
           <!-- Container where we'll display the user details -->
           <div class="quickstart-user-details-container">
             Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
